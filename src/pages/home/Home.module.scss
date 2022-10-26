@@ -1,0 +1,33 @@
+@import "~scss/Variables";
+
+.main {
+  padding: 10px 32px 0px 32px;
+  color: $textColor;
+  overflow: auto;
+  height: 92vh;
+  width: 80%;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $darkBlue;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}

@@ -1,0 +1,70 @@
+@import "~scss/variables";
+
+.sidebar {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+  height: calc(100vh - 80px);
+  width: 260px;
+  padding: 0 0 0 24px;
+  color: $textColor;
+
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 36px;
+  }
+
+  .active {
+    &::after {
+      position: absolute;
+      content: "";
+      background: $darkBlue;
+      border: 1px solid $darkBlue;
+      height: 30px;
+      border-radius: 30%;
+      width: 2px;
+      right: 0px;
+    }
+  }
+
+  .block {
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      margin-left: 16px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $textColor;
+    }
+
+    .subSettings {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+    }
+
+    .upArrow {
+      position: absolute;
+      right: 20px;
+    }
+  }
+
+  .map {
+    span {
+      margin-left: 22.5px;
+    }
+  }
+}

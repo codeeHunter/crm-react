@@ -1,0 +1,28 @@
+@import "~scss/Variables";
+
+.header {
+  background: $darkBlue;
+
+  .container {
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+    .logo,
+    .profile {
+      display: flex;
+      align-items: center;
+      color: #fff;
+
+      h3 {
+        font-size: 20px;
+        line-height: 24px;
+        padding-left: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}
